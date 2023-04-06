@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen-Z Collections</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Gen-Z <span>Collections</span></a>
+            <img src="images/menu.svg" alt="Open navigation" id="mobile-cta" class="mobile-menu">
+
+            <nav>
+                <img src="images/exit.svg" id="mobile-exit" class="mobile-menu-exit" alt="Exit navigation">
+
+                <ul class="primary-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                </ul>
+
+                <ul class="secondary-nav"> 
+                    <li><a href="#">Connect</a></li>
+                    <li><a class="go-premium-cta" href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- SECTION FOR HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">This is the Gen-Z's Collections </p>
+                <h1>A Bussiness That Serves You Better</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For Free</a>
+
+                    <a href="#" class="watch-video-cta">
+
+                    <img src="images/watch.svg" alt="Watch a video"> Watch Videos
+                    </a>
+                </div>
+
+               
+                <img src="images/illustration.svg" class="hero-img" alt="illustration">
+               
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- THIS FEAUTURES SECTION  -->
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Good Services</li>
+                <li>Quality Products</li>
+                <li>Amazing Offers</li>
+                <li>Pretty Woman Discount</li>
+                <li>And More</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="A man with an Iphone">
+        </div>
+
+    </section>
+
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener ('click', () =>{
+            nav.classList.add("menu-btn");
+        })
+
+        mobileBtnExit.addEventListener('click', () =>{
+            nav.classList.remove('menu-btn')
+        })
+
+
+    </script>
+</body>
+</html>
